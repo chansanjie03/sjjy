@@ -1,16 +1,15 @@
-package com.sjjy.eurekaservice;
+package com.sjjy.eurekaserver;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 @EnableEurekaServer
 @SpringBootApplication
-public class EurekaServiceApplication{
+public class EurekaServerApplication{
 
     public static void main(String[] args) {
-        new SpringApplicationBuilder(EurekaServiceApplication.class)
+        new SpringApplicationBuilder(EurekaServerApplication.class)
                 .run(args);
     }
 }
